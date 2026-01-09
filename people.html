@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People I Care About - Alisa</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ===== Section Cards ===== */
+    .section-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(106, 76, 147, 0.15);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .section-card img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(106, 76, 147, 0.2);
+      object-fit: cover;
+    }
+
+    .section-card h2 {
+      font-family: Georgia, serif;
+      color: #6a4c93;
+      margin-bottom: 10px;
+    }
+
+    .section-card p {
+      font-family: 'Quicksand', sans-serif;
+      flex: 1;
+      text-align: justify;
+    }
+
+    /* Quick Links Top */
+    .quick-links {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .quick-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #6a4c93;
+      transition: 0.3s;
+    }
+
+    .quick-links a:hover,
+    .quick-links a:active,
+    .quick-links a:visited {
+      color: grey;
+    }
+
+    /* Gallery */
+    .people-gallery {
+      margin-top: 40px;
+    }
+
+    .people-gallery h2 {
+      font-family: Georgia, serif;
+      color: #6a4c93;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .gallery-scroll {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .gallery-scroll img {
+      height: 180px;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-scroll img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar navigation -->
+  <div class="sidenav">
+    <div class="logo">
+      <h2>Alisa Azzahari</h2>
+      <p>Personal Space</p>
+    </div>
+    <a href="index.html">About Me</a>
+    <a href="people.html" class="active">People I Love</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobbies</a>
+    <a href="experience.html">Internship</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="main-content">
+    <h1>People I Love</h1>
+
+    <!-- Quick Links -->
+    <div class="quick-links">
+      <a href="#family">Family</a> | 
+      <a href="#sister">Sister</a> | 
+      <a href="#hsfriends">High School Friends</a> | 
+      <a href="#roommate">Roommate</a>
+    </div>
+
+    <!-- Family Section -->
+    <div class="section-card" id="family">
+      <img src="images/family.jpeg" alt="My Family">
+      <div>
+        <h2>Family</h2>
+        <p>
+          I come from a family of six siblings, and I am the second child. My father works full-time, while my mother is a full-time housewife. They have always supported me in my interests. 
+          My fifth and sixth siblings are non-identical twins, making our family even more special. 
+          Before entering university, my mother encouraged me to work part-time, helping me face my fear of communicating with others.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sister Section -->
+    <div class="section-card" id="sister">
+      <img src="images/sister.jpeg" alt="My Sister">
+      <div>
+        <h2>Sister</h2>
+        <p>
+          My sister is two years older than me. We used to argue when younger due to different personalities, but now we catch up and share stories whenever she returns home. 
+          She has encouraged me to grow as a person, offering advice and support. We often stay up late talking, laughing, and sometimes crying together, and I truly value her presence in my life.
+        </p>
+      </div>
+    </div>
+
+    <!-- High School Friends Section -->
+    <div class="section-card" id="hsfriends">
+      <img src="images/hsfriends.jpeg" alt="High School Friends">
+      <div>
+        <h2>My Lovely Mokara</h2>
+        <p>
+          These friends have been with me since Form 1. Mokara has been the name of our class since day one. Even though some of us were separated in Form 3, our friendship has stayed strong. I really appreciate their presence and love catching up, sharing life updates, and reminiscing about fun moments. They will always have a special place in my heart… can’t wait to see who will get married first
+        </p>
+      </div>
+    </div>
+
+    <!-- Roommate Section -->
+    <div class="section-card" id="roommate">
+      <img src="images/roommate.jpeg" alt="My Roommate">
+      <div>
+        <h2>Roommate</h2>
+        <p>
+          She has been my roommate from Semester 1 to Semester 5. Living together taught me independence and patience, and we were actually in the same major, just in different classes. Even though we had to move to different floors in Semester 4 because she was an MPP at that time, we still made it a point to catch up at least once a week to keep each other updated on life. She’s always been there for me, and I feel bit sad since we were almost always together during our diploma journey. Thank you for being such a great friend, my beloved Alia Zulaikha.
+        </p>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="people-gallery">
+      <h2>Memorable Moments</h2>
+      <div class="gallery-scroll">
+        <img src="images/family1.jpeg" alt="Family Memory 1">
+        <img src="images/family2.jpeg" alt="Family Memory 2">
+        <img src="images/family3.jpeg" alt="Family Memory 3">
+        <img src="images/family4.jpeg" alt="Family Memory 4">
+        <img src="images/family5.jpeg" alt="Family Memory 3">
+        <img src="images/family6.jpeg" alt="Family Memory 4">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+

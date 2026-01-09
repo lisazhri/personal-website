@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Alisa</title>
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ===== Education Cards ===== */
+    .edu-card {
+      background: rgba(255, 248, 230, 0.9); /* pastel yellow */
+      border: 2px solid #d4c5e8; /* soft lilac */
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 5px 20px rgba(167, 123, 217, 0.2);
+    }
+
+    .edu-card img {
+      width: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(106, 76, 147, 0.2);
+    }
+
+    .edu-card h2 {
+      font-family: Georgia, serif;
+      color: #6a4c93;
+      margin-bottom: 10px;
+    }
+
+    .edu-card p {
+      font-family: 'Quicksand', sans-serif;
+      flex: 1;
+      text-align: justify;
+    }
+
+    /* Quick Links */
+    .quick-links {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .quick-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #6a4c93;
+      transition: 0.3s;
+    }
+
+    .quick-links a:hover,
+    .quick-links a:active,
+    .quick-links a:visited {
+      color: grey;
+    }
+
+    /* Gallery Scroll */
+    .edu-gallery {
+      margin-top: 40px;
+    }
+
+    .edu-gallery h2 {
+      font-family: Georgia, serif;
+      color: #6a4c93;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .gallery-scroll {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .gallery-scroll img {
+      height: 180px;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-scroll img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background: #b9a0d6;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar navigation -->
+  <div class="sidenav">
+    <div class="logo">
+      <h2>Alisa Azzahari</h2>
+      <p>Personal Space</p>
+    </div>
+    <a href="index.html">About Me</a>
+    <a href="people.html">People I Care About</a>
+    <a href="education.html" class="active">Education</a>
+    <a href="hobby.html">Hobbies</a>
+    <a href="experience.html">Internship</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Education Background</h1>
+
+    <!-- Quick Links -->
+    <div class="quick-links">
+      <a href="#sjk">SJK(C) Chung Hua Klang</a> | 
+      <a href="#smk">SMK Kota Kemuning</a> | 
+      <a href="#uitm">UiTM Rembau</a>
+    </div>
+
+    <!-- SJK(C) Chung Hua Klang -->
+    <div class="edu-card" id="sjk">
+      <img src="images/sjk.jpeg" alt="SJK(C) Chung Hua Klang">
+      <div>
+        <h2>SJK(C) Chung Hua Klang (2012-2017)</h2>
+        <p>
+          I studied at <a href="https://www.google.com/maps/place/SJK(C)+Chung+Hua+Klang" target="_blank">SJK(C) Chung Hua Klang</a> from 2012 to 2017. My years here laid a strong foundation for academic learning and social skills.
+        </p>
+      </div>
+    </div>
+
+    <!-- SMK Kota Kemuning -->
+    <div class="edu-card" id="smk">
+      <img src="images/smk.jpeg" alt="SMK Kota Kemuning">
+      <div>
+        <h2>SMK Kota Kemuning (2018-2023)</h2>
+        <p>
+          I attended <a href="https://www.google.com/maps/place/SMK+Kota+Kemuning" target="_blank">SMK Kota Kemuning</a> where I completed my SPM. I participated in extracurricular activities and developed leadership and teamwork skills.
+        </p>
+      </div>
+    </div>
+
+    <!-- UiTM Rembau -->
+    <div class="edu-card" id="uitm">
+      <img src="images/uitm.jpeg" alt="UiTM Rembau">
+      <div>
+        <h2>UiTM Rembau, Negeri Sembilan (2023 - Present)</h2>
+        <p>
+          Currently pursuing my Diploma in Information Management at UiTM Rembau. I am gaining skills in information systems, database management, and project management while also engaging in campus activities.
+        </p>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="edu-gallery">
+      <h2>School Memories</h2>
+      <div class="gallery-scroll">
+        <img src="images/school1.jpeg" alt="School Memory 1">
+        <img src="images/school2.jpeg" alt="School Memory 2">
+        <img src="images/school3.jpeg" alt="School Memory 3">
+        <img src="images/school4.jpeg" alt="School Memory 4">
+        <img src="images/school5.jpeg" alt="School Memory 5">
+        <img src="images/school6.jpeg" alt="School Memory 6">
+        <img src="images/school7.jpeg" alt="School Memory 7">
+        <img src="images/school8.jpeg" alt="School Memory 8">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
